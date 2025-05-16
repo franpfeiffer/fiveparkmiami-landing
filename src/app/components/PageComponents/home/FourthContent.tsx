@@ -6,27 +6,23 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const locations = [
+const images = [
     {
-        category: 'Elegance by the River:',
-        name: 'Faena Residences is situated along the Miami River, offering a unique blend of urban sophistication and natural beauty.',
-        image: '/pool-veiw.jpg' //sorry for the typo, to lazy to change it
+        url: "/Over-Park-Looking-South-1-e1701199899800.webp",
+        alt: "Over Park Looking South",
     },
     {
-        category: 'Proximity to Iconic Destinations:',
-        name: 'Just steps away from world-class restaurants, art galleries, and entertainment options, the best of Miami is within easy reach.',
-        image: '/bartender.webp'
+        url: "/Park_View-e1701199940631.webp",
+        alt: "Park View",
     },
     {
-        category: 'An Exclusive Lifestyle:',
-        name: 'Enjoy private boat rides, curated shopping experiences, and seamless access to the cosmopolitan allure of Brickell City Centre.',
-        image: '/Faena-Residences-Miami_Building-Hero.jpg'
+        url: "/Crown-Towards-South-Beach_Stage-e1701878329321.webp",
+        alt: "Crown Towards South Beach",
     },
     {
-        category: 'A Transformative Destination:',
-        name: 'In the heart of a city undergoing constant transformation, Faena Residences offers a harmonious balance of tranquility and vibrancy, establishing itself as an iconic enclave.',
-        image: '/puente.webp'
-    },
+        url: "/Downtown_View_At_Night-e1701200125888.webp",
+        alt: "Downtown View At Night",
+    }
 ];
 
 function FourthContent() {
@@ -39,10 +35,10 @@ function FourthContent() {
                         <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 leading-tight">
                             At water's edge, with the best of Miami at your door
                         </h2>
-                        <p className="text-xl sm:text-3xl text-gray-600 max-w-lg mx-auto lg:mx-0">
-                            Stroll along the promenade in the morning, dip into a museum midday, sip wine from the Loire Valley and dine on pasta alle vongole in the evening.
+                        <p className="text-xl sm:text-2xl text-gray-600 max-w-lg mx-auto lg:mx-0">
+                            With the best qualities of neighborhood and city, Miami Beach is a place where the list of cultural touchstones is myriad, culinary and entertainment options dazzle, and life is just a little more tantalizing. With exciting new projects and a vital approach to environmental preservation, the region continues to be a hub for what's next.
                         </p>
-                        <button className="bg-[#CF3036] text-white px-6 sm:px-8 py-3 sm:py-4 text-xl sm:text-2xl font-black hover:bg-[#F6F6F6] transition-colors">
+                        <button className="bg-black text-white border-2 border-black px-6 sm:px-8 py-3 sm:py-4 text-md sm:text-lg font-neue-plak-black hover:bg-white hover:text-black transition-colors">
                             SCHEDULE A VISIT
                         </button>
                     </div>
@@ -63,22 +59,14 @@ function FourthContent() {
                             }}
                             className="w-full"
                         >
-                            {locations.map((location, index) => (
+                            {images.map((image, index) => (
                                 <SwiperSlide key={index}>
                                     <div className="relative group overflow-hidden">
                                         <img
-                                            src={location.image}
-                                            alt={location.name}
+                                            src={image.url}
+                                            alt={image.alt}
                                             className="w-full h-[350px] sm:h-[450px] object-cover transition-transform duration-500 group-hover:scale-110"
                                         />
-                                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 sm:p-6">
-                                            <p className="text-white/80 text-lg sm:text-2xl uppercase tracking-wider font-neue-plak-black">
-                                                {location.category}
-                                            </p>
-                                            <h3 className="text-white text-xl sm:text-2xl font-medium mt-1">
-                                                {location.name}
-                                            </h3>
-                                        </div>
                                     </div>
                                 </SwiperSlide>
                             ))}
@@ -98,4 +86,3 @@ function FourthContent() {
 }
 
 export default FourthContent;
-

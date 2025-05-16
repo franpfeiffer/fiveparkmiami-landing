@@ -3,14 +3,18 @@ import React, { useState } from 'react';
 
 export default function Gallery() {
     const images = [
-        "/faena-1.jpeg",
-        "/faena-second-content.jpeg",
-        "/faena-cochera.jpg",
-        "/faena-penthouse.jpg",
-        "/faena-bano.jpg",
-        "/faena-terraza.jpg",
-        "/faena-cocina.jpg",
-        "/faena-buildings.jpg"
+        "/pool.webp",
+        "/gym.webp",
+        "/gym2.webp",
+        "/outdoor.webp",
+        "/bar.webp",
+        "/kids.webp",
+        "/spa.webp",
+        "/cine.webp",
+        "/coworking.webp",
+        "/boardgames.webp",
+        "/pool2.webp",
+        "/PurpleBar-e1701201880192.webp"
     ];
 
     const [isOpen, setIsOpen] = useState(false);
@@ -41,11 +45,11 @@ export default function Gallery() {
 
     return (
         <>
-            <div className="m-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="m-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
                 {images.map((image, index) => (
                     <div
                         key={index}
-                        className="relative group overflow-hidden rounded-lg cursor-pointer"
+                        className="relative group overflow-hidden cursor-pointer"
                         onClick={() => openCarousel(index)}
                     >
                         <img
@@ -78,14 +82,14 @@ export default function Gallery() {
                             />
 
                             <button
-                                className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
+                                className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2"
                                 onClick={goToPrevious}
                             >
                                 ←
                             </button>
 
                             <button
-                                className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
+                                className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2"
                                 onClick={goToNext}
                             >
                                 →

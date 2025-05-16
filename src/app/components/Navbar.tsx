@@ -21,7 +21,11 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0">
                         <Link href="/">
-                            <h2 className="text-6xl font-neue-plak-light text-[#CF3036]">FAENA RESIDENCES</h2>
+                            <img
+                                src="/logo.webp"
+                                alt="Logo"
+                                className="h-12 lg:h-24"
+                            />
                         </Link>
                     </div>
                     <div className="hidden lg:flex items-center space-x-8">
@@ -47,7 +51,7 @@ const Navbar = () => {
                     </ul>
                     </div>
                     <div className="hidden lg:flex items-center space-x-4">
-                        <button className="bg-[#CF3036] text-white font-neue-plak-black px-6 py-2 border-2 border-[#CF3036] hover:bg-[#f6f6f6] hover:text-[#CF3036]">
+                        <button className="bg-black text-white font-neue-plak-black px-6 py-2 border-2 border-black hover:bg-white hover:text-black transition-colors">
                             SCHEDULE A VISIT
                         </button>
                     </div>

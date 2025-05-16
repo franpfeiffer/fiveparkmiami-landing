@@ -6,7 +6,6 @@ import FourthContent from "./components/PageComponents/home/FourthContent";
 import FifthContent from "./components/PageComponents/home/FifthContent";
 import SixthComponent from "./components/PageComponents/home/SixthComponent";
 import SeventhContent from "./components/PageComponents/home/SeventhContent";
-import Gustavo from "./components/PageComponents/home/Gustavo";
 import EightContent from "./components/PageComponents/home/EightContent";
 import NinthContent from "./components/PageComponents/home/NinthContent";
 
@@ -14,9 +13,9 @@ export default function Home() {
   return (
     <div className="mt-[65px] lg:mt-[86px]">
         <Header
-            title="FAENA RESIDENCES"
-            description="Where Art, Luxury and Oceanfront Living Converge"
-            image="/faena-1.jpeg"
+            title="FIVE PARK RESIDENCES"
+            description="BEACH LIFE AT NEW HEIGHTS"
+            image="/hero.webp"
             home
         />
         <FirstContent />
@@ -26,7 +25,6 @@ export default function Home() {
         <FifthContent />
         <SixthComponent />
         <SeventhContent />
-        <Gustavo />
         <EightContent />
         <NinthContent />
     </div>

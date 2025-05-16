@@ -8,21 +8,15 @@ export default function SeventhContent() {
                     <h1 className="text-4xl md:text-5xl font-neue-plak-black tracking-tight">DEPOSIT STRUCTURE</h1>
 
                     <div className="space-y-4 text-4xl ">
-                        <p className="font-medium">5% at Reservation</p>
-                        <p className="font-medium">5% 45 days after Signing Contract</p>
-                        <p className="font-medium">10% 120 days from Signing Contract</p>
-                        <p className="font-medium">10% at Groundbreaking</p>
-                        <p className="font-medium">10% 12 Months after Groundbreaking</p>
-                        <p className="font-medium">10% Pouring of Highest Residential Unit</p>
-                        <p className="font-medium">50% at Closing</p>
+                        <p className="font-medium">10% at Contract</p>
+                        <p className="font-medium">10% 90 Days After Execution of Contract</p>
+                        <p className="font-medium">10% 90 Days After</p>
+                        <p className="font-medium">10% 90 Days After</p>
+                        <p className="font-medium">Balance at Closing 2024</p>
                     </div>
                 </div>
                 <div className="space-y-8">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-neue-plak-black text-[#CF3036] leading-tight">
-                        HOME IS WAITING FOR YOU HERE
-                    </h2>
-
-                    <button className="bg-[#CF3036] text-3xl text-white px-8 py-3 hover:bg-[#F6F6F6]/90 hover:text-black transition-colors font-medium">
+                    <button className="bg-black border-2 border-black text-3xl text-white px-8 py-3 hover:bg-white hover:text-black transition-colors font-medium">
                         SCHEDULE A VISIT
                     </button>
                 </div>
