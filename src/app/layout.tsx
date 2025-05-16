@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Faena Residences Miami",
-  description: "Faena Residences Miami",
+  title: "Five Park Residence | Beach life at new heights",
+  description: "Five Park Residence",
 };
 
 export default function RootLayout({
